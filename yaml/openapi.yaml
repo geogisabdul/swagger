@@ -8,7 +8,7 @@ info:
     email: kholiqnnabdul@gmail.com
   license:
     name: GCF Package
-    url: https://github.com/serbaevents/pasetobd
+    url: https://github.com/geogisabdul/GCPbe
   version: 1.0.11
 externalDocs:
   description: Swagger
@@ -20,17 +20,17 @@ tags:
     description: Authentikasi
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/serbaevents/pasetobd
+      url: https://github.com/geogisabdul/GCPbe
   - name: register
     description: Register Account
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/serbaevents/pasetobd
+      url: https://github.com/geogisabdul/GCPbe
   - name: data
     description: Data Untuk akses GIS
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/serbaevents/pasetobd
+      url: https://github.com/geogisabdul/GCPbe
 paths:
   /RegisterGis:
     post:
@@ -130,10 +130,10 @@ components:
       properties:
         username:
           type: string
-          example: cobain
+          example: serbaevent
         password:
           type: string
-          example: siabdul
+          example: begitulah
     Response:
       type: object
       properties:
@@ -157,7 +157,7 @@ components:
           properties:
             username:
               type: string
-              example: cobain
+              example: serbaevent
             password:
               type: string
               example: hashed password
@@ -169,10 +169,10 @@ components:
       properties:
         username:
           type: string
-          example: cobain
+          example: serbaevent
         password:
           type: string
-          example: siabdul
+          example: begitulah
     bodycord:
       type: object
       properties:
@@ -181,7 +181,7 @@ components:
           example: polygon
         name:
           type: string
-          example: cobain
+          example: serbaevent
         volume:
           type: string
           example: "1"
@@ -196,7 +196,7 @@ components:
           example: Selamat Datang
         token:
           type: string
-          example: siabdul
+          example: begitulah
   requestBodies:
     AuthReq:
       description: Request Authentication
