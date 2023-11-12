@@ -8,7 +8,7 @@ info:
     email: kholiqnnabdul@gmail.com
   license:
     name: GCF Package
-    url: https://github.com/geogisabdul/GCPbe
+    url: https://pkg.go.dev/github.com/serbaevents/pasetobd
   version: 1.0.11
 externalDocs:
   description: Swagger
