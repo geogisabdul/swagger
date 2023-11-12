@@ -20,17 +20,17 @@ tags:
     description: Authentikasi
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/geogisabdul/GCPbe
+      url: https://github.com/serbaevents/pasetobd
   - name: register
     description: Register Account
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/geogisabdul/GCPbe
+      url: https://github.com/serbaevents/pasetobd
   - name: data
     description: Data Untuk akses GIS
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/geogisabdul/GCPbe
+      url: https://github.com/serbaevents/pasetobd
 paths:
   /RegisterGis:
     post:
