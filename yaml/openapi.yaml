@@ -43,15 +43,15 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/user'
+              $ref: "#/components/schemas/user"
       responses:
-        '200':
+        "200":
           description: successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Response'
-        '405':
+                $ref: "#/components/schemas/Response"
+        "405":
           description: Invalid input
   /login-gis:
     post:
@@ -64,15 +64,15 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Auth'
+              $ref: "#/components/schemas/Auth"
       responses:
-        '200':
+        "200":
           description: successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AuthResponse'
-        '405':
+                $ref: "#/components/schemas/AuthResponse"
+        "405":
           description: Invalid input
   /UpdateGeo:
     put:
@@ -85,43 +85,43 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/bodycord'
+              $ref: "#/components/schemas/bodycord"
       responses:
-        '200':
+        "200":
           description: successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Response'
-        '405':
-          description: Invalid input          
+                $ref: "#/components/schemas/Response"
+        "405":
+          description: Invalid input
       security:
         - Login:
-          - write:apiKey
-          - read:apiKey
+            - write:apiKey
+            - read:apiKey
 
   /GetAllGeo:
     get:
       tags:
         - data
       summary: Get Data Geojson
-      description: Header auth 
+      description: Header auth
       operationId: GetdataGeojson
       responses:
-        '200':
+        "200":
           description: successful operation
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/responseUser'
-        '400':
+                  $ref: "#/components/schemas/responseUser"
+        "400":
           description: Invalid status value
       security:
         - Login:
-          - write:apiKey
-          - read:apiKey
+            - write:apiKey
+            - read:apiKey
 
 components:
   schemas:
@@ -130,10 +130,10 @@ components:
       properties:
         username:
           type: string
-          example : haris
+          example: nizar
         password:
           type: string
-          example: haris
+          example: nizar
     Response:
       type: object
       properties:
@@ -157,7 +157,7 @@ components:
           properties:
             username:
               type: string
-              example: haris
+              example: nizar
             password:
               type: string
               example: hashed password
@@ -169,10 +169,10 @@ components:
       properties:
         username:
           type: string
-          example: haris
+          example: nizar
         password:
           type: string
-          example: haris
+          example: nizar
     bodycord:
       type: object
       properties:
@@ -181,7 +181,7 @@ components:
           example: polygon
         name:
           type: string
-          example: haris
+          example: nizar
         volume:
           type: string
           example: "1"
@@ -196,14 +196,14 @@ components:
           example: Selamat Datang
         token:
           type: string
-          example: haris
+          example: nizar
   requestBodies:
     AuthReq:
       description: Request Authentication
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Auth'
+            $ref: "#/components/schemas/Auth"
     UserArray:
       description: List of user object
       content:
@@ -211,11 +211,9 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/AuthResponse'
+              $ref: "#/components/schemas/AuthResponse"
   securitySchemes:
     Login:
       type: apiKey
       name: Login
       in: header
-
-      
