@@ -16,6 +16,7 @@ externalDocs:
 servers:
   - url: https://us-central1-gcpospasial.cloudfunctions.net
   - url: https://us-central1-backendserbaevents.cloudfunctions.net
+  - url: https://asia-southeast2-proven-wavelet-401905.cloudfunctions.net
 tags:
   - name: auth
     description: Authentikasi
@@ -33,7 +34,7 @@ tags:
       description: Deskripsi dan Kode Program
       url: https://github.com/gis-geos/gcf
 paths:
-  /RegisterPost:
+  /register:
     post:
       tags:
         - register
@@ -54,7 +55,7 @@ paths:
                 $ref: "#/components/schemas/Response"
         "405":
           description: Invalid input
-  /LoginFunction:
+  /logintset:
     post:
       tags:
         - auth
