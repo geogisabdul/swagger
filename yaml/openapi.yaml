@@ -33,7 +33,7 @@ tags:
       description: Deskripsi dan Kode Program
       url: https://github.com/gis-geos/gcf
 paths:
-  /RegisterGis:
+  /RegisterPost:
     post:
       tags:
         - register
