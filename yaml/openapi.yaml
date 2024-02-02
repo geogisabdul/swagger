@@ -8,15 +8,14 @@ info:
     email: kholiqnnabdul@gmail.com
   license:
     name: GCF Package
-    url: https://pkg.go.dev/github.com/gis-geos/gcf
+    url: https://pkg.go.dev/github.com/geogisabdul/GCPbe
   version: 1.0.11
 externalDocs:
   description: Swagger
   url: https://geogisabdul.github.io/swagger/
 servers:
+  - url: https://asia-southeast2-gis-project-401902.cloudfunctions.net
   - url: https://us-central1-gcpospasial.cloudfunctions.net
-  - url: https://us-central1-backendserbaevents.cloudfunctions.net
-  - url: https://asia-southeast2-proven-wavelet-401905.cloudfunctions.net
 tags:
   - name: auth
     description: Authentikasi
@@ -34,7 +33,7 @@ tags:
       description: Deskripsi dan Kode Program
       url: https://github.com/gis-geos/gcf
 paths:
-  /register:
+  /RegisterGeo:
     post:
       tags:
         - register
@@ -55,7 +54,7 @@ paths:
                 $ref: "#/components/schemas/Response"
         "405":
           description: Invalid input
-  /logintset:
+  /LoginGeo:
     post:
       tags:
         - auth
