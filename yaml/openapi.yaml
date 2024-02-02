@@ -132,10 +132,10 @@ components:
       properties:
         username:
           type: string
-          example: nizar@gmail.com
+          example: nizar
         password:
           type: string
-          example: nizar12345
+          example: nizar
     Response:
       type: object
       properties:
@@ -169,12 +169,12 @@ components:
     Auth:
       type: object
       properties:
-       username:
+        username:
           type: string
-          example: nizar@gmail.com
+          example: nizar
         password:
           type: string
-          example: nizar12345
+          example: nizar
     bodycord:
       type: object
       properties:
