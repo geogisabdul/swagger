@@ -15,6 +15,7 @@ externalDocs:
   url: https://geogisabdul.github.io/swagger/
 servers:
   - url: https://us-central1-gcpospasial.cloudfunctions.net
+  - url: https://us-central1-backendserbaevents.cloudfunctions.net
 tags:
   - name: auth
     description: Authentikasi
@@ -53,7 +54,7 @@ paths:
                 $ref: "#/components/schemas/Response"
         "405":
           description: Invalid input
-  /login-gis:
+  /LoginFunction:
     post:
       tags:
         - auth
