@@ -14,7 +14,6 @@ externalDocs:
   description: Swagger
   url: https://geogisabdul.github.io/swagger/
 servers:
-  - url: https://asia-southeast2-gis-project-401902.cloudfunctions.net
   - url: https://us-central1-gcpospasial.cloudfunctions.net
 tags:
   - name: auth
@@ -33,7 +32,7 @@ tags:
       description: Deskripsi dan Kode Program
       url: https://github.com/gis-geos/gcf
 paths:
-  /RegisterGeo:
+  /RegisterGis:
     post:
       tags:
         - register
@@ -54,7 +53,7 @@ paths:
                 $ref: "#/components/schemas/Response"
         "405":
           description: Invalid input
-  /LoginGeo:
+  /login-gis:
     post:
       tags:
         - auth
